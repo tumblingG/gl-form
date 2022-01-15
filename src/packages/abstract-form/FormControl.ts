@@ -10,7 +10,7 @@ export class FormControl extends AbstractFormControl implements FormControlInter
 
   constructor(defaultValue: any, validators: Array<Validator> | null = null) {
     super();
-    this.name = name;
+    this.name = '';
     this.validators = validators;
     this.setValue(defaultValue);
   }

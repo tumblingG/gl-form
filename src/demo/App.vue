@@ -16,7 +16,4 @@
 </script>
 
 <style lang="less">
-  #app {
-    color: red;
-  }
 </style>

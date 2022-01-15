@@ -1,12 +1,25 @@
 <script lang="ts">
 import 'reflect-metadata';
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue, Ref } from 'vue-property-decorator';
+import GlForm from '../../packages/web/gl-form.vue';
+import {formConfig} from './config';
+
 
 @Component({
-    name: 'Test'
+  name: 'Test',
+  components: {
+    GlForm
+  }
 })
 export default class Test extends Vue {
+  @Ref() form!: GlForm;
 
+  value: string | null = null;
+  formConfig = formConfig;
+
+  onValueChange(value: any) {
+    this.value = Object.assign({}, value);
+  }
 }
 </script>
 

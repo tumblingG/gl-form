@@ -1,1 +1,12 @@
-<div class="test">hss</div>
+<div class="test">
+    <gl-form
+      ref="form"
+      :config="formConfig"
+      label-position="right"
+      @onValueChange="onValueChange">
+    </gl-form>
+    <code>
+      {{value}}
+    </code>
+
+</div>

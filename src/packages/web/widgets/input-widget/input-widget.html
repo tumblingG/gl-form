@@ -1,0 +1,7 @@
+<a-input
+  :type="config.type || 'text'"
+  v-model="value"
+  @input="viewToModel($event.target.value)"
+  @blur="setTouched"
+  allowClear>
+</a-input>

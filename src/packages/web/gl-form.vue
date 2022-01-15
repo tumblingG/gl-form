@@ -1,11 +1,12 @@
 <script lang="ts">
 import 'reflect-metadata';
 import { Component, Prop, Vue, Emit } from 'vue-property-decorator';
+import './ant';
+import './widgets/index';
 import {FormGroup, AbstractFormControl} from '../abstract-form';
 import ControlWrapper from './control-wrapper/control-wrapper.vue';
 import {FormConfig, FormConfigItemInterface} from '../config';
 import {FormFactoryService} from '../services/form-factory';
-// import './widgets/index';
 import CommonWidget from '../common/common-widget';
 
 @Component({
@@ -100,5 +101,5 @@ export default class GlForm extends Vue {
 }
 </script>
 
-<template src="gl-form.html"></template>
-<style src="gl-form.less" lang="less" scoped></style>
+<template src="./gl-form.html"></template>
+<style src="./gl-form.less" lang="less" scoped></style>
