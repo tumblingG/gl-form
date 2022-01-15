@@ -1,0 +1,15 @@
+<a-checkbox
+    v-if="config.options.length === 1"
+    :checked="value"
+    @change="viewToModel($event.target.checked)">
+    {{config.options[0].label}}
+</a-checkbox>
+<a-checkbox-group
+    v-else
+    :value="value"
+    :options="config.options"
+    @change="viewToModel">
+</a-checkbox-group>
+
+
+

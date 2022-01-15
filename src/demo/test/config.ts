@@ -32,19 +32,19 @@ export const formConfig: FormConfig = [
       {validator: Validators.pattern('1'), message: '只能选男'}
     ]
   },
-  // {
-  //   name: 'rank',
-  //   label: '级别',
-  //   widget: 'checkbox',
-  //   options: [
-  //     {label: '一级', value: 1},
-  //     {label: '二级', value: 2}
-  //   ],
-  //   ui: {
-  //     span: 24
-  //   },
-  //   defaultValue: [1]
-  // },
+  {
+    name: 'rank',
+    label: '级别',
+    widget: 'checkbox',
+    options: [
+      {label: '一级', value: 1},
+      // {label: '二级', value: 2}
+    ],
+    ui: {
+      span: 24
+    },
+    defaultValue: true
+  },
   {
     name: 'class',
     label: '班级',
