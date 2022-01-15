@@ -1,0 +1,11 @@
+<a-select
+    v-model="value"
+    @change="viewToModel"
+    @blur="setTouched">
+    <a-select-option
+        v-for="item of config.options"
+        :key="item.value"
+        :value="item.value">
+        {{ item.label }}
+    </a-select-option>
+</a-select>

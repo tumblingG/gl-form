@@ -45,17 +45,17 @@ export const formConfig: FormConfig = [
   //   },
   //   defaultValue: [1]
   // },
-  // {
-  //   name: 'class',
-  //   label: '班级',
-  //   widget: 'select',
-  //   options: [
-  //     {label: '小学', value: 1},
-  //     {label: '中学', value: 2}
-  //   ],
-  //   ui: {
-  //     span: 24
-  //   },
-  //   defaultValue: 2
-  // }
+  {
+    name: 'class',
+    label: '班级',
+    widget: 'select',
+    options: [
+      {label: '小学', value: 1},
+      {label: '中学', value: 2}
+    ],
+    ui: {
+      span: 24
+    },
+    defaultValue: 2
+  }
 ];
