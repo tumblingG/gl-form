@@ -1,0 +1,10 @@
+<a-radio-group
+    v-model="value"
+    @change="viewToModel($event.target.value)">
+    <a-radio
+        v-for="item of config.options"
+        :key="item.value"
+        :value="item.value">
+        {{item.label}}
+    </a-radio>
+</a-radio-group>

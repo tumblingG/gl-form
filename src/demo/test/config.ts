@@ -16,22 +16,22 @@ export const formConfig: FormConfig = [
       {validator: Validators.max(100), message: '不能大于100'}
     ]
   },
-  // {
-  //   name: 'sex',
-  //   label: '性别',
-  //   widget: 'radio',
-  //   options: [
-  //     {label: '男', value: 1},
-  //     {label: '女', value: 2}
-  //   ],
-  //   ui: {
-  //     span: 24
-  //   },
-  //   defaultValue: 2,
-  //   validators: [
-  //     {validator: Validators.pattern('1'), message: '只能选男'}
-  //   ]
-  // },
+  {
+    name: 'sex',
+    label: '性别',
+    widget: 'radio',
+    options: [
+      {label: '男', value: 1},
+      {label: '女', value: 2}
+    ],
+    ui: {
+      span: 24
+    },
+    defaultValue: 2,
+    validators: [
+      {validator: Validators.pattern('1'), message: '只能选男'}
+    ]
+  },
   // {
   //   name: 'rank',
   //   label: '级别',
