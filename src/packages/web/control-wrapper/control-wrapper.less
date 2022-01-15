@@ -1,0 +1,39 @@
+.control-wrapper {
+  margin-bottom: 25px;
+  .form-item-control {
+    position: relative;
+  }
+  .form-item-control,
+  .form-item-label {
+    line-height: 40px;
+  }
+
+  .form-item-label.required:before {
+    content: "*";
+    color: #f56c6c;
+    margin-right: 4px;
+  }
+
+  &.is-error {
+    .el-input__inner,
+    .el-input__inner:focus,
+    .el-textarea__inner,
+    .el-textarea__inner:focus {
+      border-color: #f56c6c;
+    }
+  }
+  .form-item-errors {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #f56c6c;
+    transition: all .15s ease-in-out;
+    transform-origin: top;
+    &-enter{
+      opacity: 0;
+    }
+    &-leave-to {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<form class="gl-form"
+  :class="[labelPositionClass]">
+  <a-row :gutter="10">
+    <a-col v-for="{path, configItem} of flatConfig"
+            :key="configItem.name"
+            :class="{hidden: configItem.ui.hidden === true}"
+            :span="configItem.ui.span || 24">
+      <control-wrapper
+          :config="configItem"
+          :path="path"
+          :root-form="formGroup"
+          :label-width="labelWidth"/>
+    </a-col>
+  </a-row>
+</form>

@@ -1,0 +1,20 @@
+<div class="control-wrapper"
+    :class="{'is-error': (control.dirty || control.touched) && control.errors}">
+  <label class="form-item-label"
+         :class="{required: isRequired}"
+         :style="{width: innerLabelWidth}">{{config.label}}</label>
+  <div class="form-item-control">
+    <div class="form-item-content">
+      <component
+        :is="widget"
+        :control="control"
+        :path="path"
+        :config="config"
+        @showRequiredStar="showRequiredStar"></component>
+    </div>
+    <transition name="form-item-errors">
+      <div v-if="(control.dirty || control.touched) && control.errors"
+           class="form-item-errors">{{control.errors.message}}</div>
+    </transition>
+  </div>
+</div>
